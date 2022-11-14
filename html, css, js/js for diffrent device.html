@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+             
+<script>
+    var var1="hotpink",var2;
+    
+</script>
+<style>
+
+:root{
+    --var1:hotpink;
+}
+        #rect{
+            fill:black;/*if default*/
+
+        }   
+        
+        @media screen and (max-width:980px){
+            #rect{
+                fill:var(--var1);
+                
+            }
+        }
+
+
+
+        @media screen and (max-width:480px){
+
+#rect{
+    fill:blue;
+}
+
+
+
+
+        }
+
+  
+
+
+
+</style> 
+
+    </head>
+    <body>
+        <svg width="200px" height="200px" viewBox="0 0 210 297" >
+ <g stroke-width=".4434">
+  <rect id="rect" x="-40.593" y="3.3912" width="291.64" height="289.71" fill="#0f0" style="paint-order:stroke fill markers"/>
+
+
+
+  <path id="path" transform="matrix(1.485,0,0,1.485,-43.5,0)" d="m190.52 188.24-89.676-68.786-87.47 69.112 68.786-89.676-69.113-87.47 89.676 68.786 87.47-69.113-68.786 89.676z" fill="#f00" style="paint-order:stroke fill markers"/>
+ </g>
+</svg>
+<p style="font-size:5em ;" id="wriet">0</p>
+<script>
+var myrect = document.getElementById("rect");
+var mypath = document.getElementById("path");
+var w = document.getElementById("wriet");
+
+w.innerHTML=document.documentElement.clientWidth;
+changed(w)
+w.addListener(changed);
+function changed(b){
+b.innerHTML=document.documentElement.clientWidth;
+
+}
+
+function fun(){
+w.innerHTM="<480pxy";
+}
+
+
+var x =window.matchMedia("(max-width:480px)");
+
+x.addListener(fun);
+
+
+
+</script>
+    </body>
+</html>

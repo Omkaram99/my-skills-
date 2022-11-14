@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <style>
+.circle{
+
+position: absolute;
+
+  
+    background-color: lue;
+ 
+    margin: auto;
+   
+        border: 5px solid black;
+      
+        
+
+
+
+    border-radius:100%;
+ 
+
+}
+.circle:nth-child(1){
+    border-width: 0px 5px 5px  5px;
+    border-color:  transparent transparent black black;
+  animation: oddc 5s linear infinite;     
+    width: 200px;height: 200px;
+    top: calc(50vh - 100px);left: calc(50vw - 100px);
+  
+}
+
+.circle:nth-child(2){ border-width: 5px 5px  5px 0px;
+    top: calc(50vh - 75px);left: calc(50vw - 75px);
+
+    border-color: black black transparent   transparent;
+    animation: evenc 5s linear infinite;
+
+    width: 150px;height: 150px;
+}
+.circle:nth-child(3){ border-width: 5px 5px  5px 0px;
+    width: 100px;height: 100px;
+    top: calc(50vh - 50px);left: calc(50vw - 50px);
+
+    border-color: transparent  black   black transparent;
+  animation: oddc 5s linear infinite;
+
+}
+.circle:nth-child(4){
+    top: calc(50vh - 25px);left: calc(50vw - 25px);
+    width: 50px;height: 50px;
+    border-width: 5px 0px 5px 5px ;
+    border-color:  transparent black black transparent;
+  animation: evenc 5s linear infinite;
+
+
+}
+@keyframes oddc{
+    100%{
+        rotate: -360deg;
+    }
+}
+@keyframes evenc{
+    100%{
+        rotate: 360deg;
+    }
+}
+    </style>
+  
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+
+</html>

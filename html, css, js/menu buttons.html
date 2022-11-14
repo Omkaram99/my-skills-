@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="icon" href="../images/oicon1.png">
+    <title>menu buttons</title>
+    <head>
+        
+        <style>
+          
+.room{
+    position: relative;
+    width:5vw;
+margin:80px auto;
+box-sizing: border-box;
+background-color:gree;border:2px solid green;
+font-size:0.2vw;padding: 0px 5px;
+cursor:pointer;
+
+z-index: 1px;
+}
+.row{
+    
+    
+    display: flex;
+  
+    background-color: qua;
+    padding: 5px 0px;width: 2vw;
+    width: auto;
+    
+}
+.mr{
+   
+   color:blue; background-color: blue;
+    padding:0px 5px;
+    
+  
+   
+}
+ 
+.mr:hover{ transition:1s;
+    box-shadow: 0px 0px 22px blue;
+    cursor:pointer;
+overflow: hidden;
+}
+        </style>
+
+    </head>
+    <body>
+        <div class="all">
+        <div class="room" onclick="start()" id="room">
+            <div class="set">
+            <div class="row" id="row1" id="row">
+           <div class="mr" onclick="clic(1)"  >option 1</div>
+           <div class="mr" onclick="clic(2)">option 2</div>
+           <div class="mr" onclick="clic(3)">option 3</div></div>
+           <div class="row">
+           <div class="mr" onclick="clic(4)">option 4</div>
+           <div class="mr" onclick="clic(5)">option 5</div>
+           <div class="mr" onclick="clic(6)">option 6</div></div>
+           <div class="row" id="row3">
+           <div class="mr" onclick="clic(7)">option 7</div>
+           <div class="mr" onclick="clic(8)">option 8</div>
+           <div class="mr" onclick="clic(9)">option 9</div></div>
+
+        </div></div></div>
+<script>
+           function start(){ 
+            
+                
+               var room =document.getElementById("room");
+               if(room.style.width != "20vw"){
+               room.style.transition='1s';
+               room.style.width='20vw';
+
+               //  mr//
+               var mr = document.getElementsByClassName("mr");
+               for(i=0;i<mr.length;i++){
+               mr[i].style.backgroundColor='black';
+               mr[i].style.color='gold';
+               mr[i].style.fontSize='1vw';
+               mr[i].style.transition='1s';
+               mr[i].style.borderRadius='20px';}
+
+               // row//
+               var row = document.getElementsByClassName("row")
+               for(j=0;j<row.length;j++){
+               row[j].style.justifyContent='space-between';
+               row[j].style.paddingBottom='5vw';
+               row[j].style.transition='1s';
+              }
+
+               // row3//
+               var row3 =document.getElementById("row3").style.paddingBottom="2px";
+
+}
+               ////
+
+                           
+else {
+
+                            room.style.transition='1s';
+               room.style.width='4.9vw';
+
+               //  mr//
+               var mr = document.getElementsByClassName("mr");
+               for(i=0;i<mr.length;i++){
+               mr[i].style.backgroundColor='blue';
+               mr[i].style.color='blue';
+               mr[i].style.fontSize='0.2vw';
+               mr[i].style.transition='1s';
+               mr[i].style.borderRadius='0px';}
+
+               // row//
+               var row = document.getElementsByClassName("row")
+               for(j=0;j<row.length;j++){
+               row[j].style.justifyContent='none';
+               row[j].style.paddingBottom='5px';
+               row[j].width='2vw';
+               row[j].style.transition='1s';}
+
+               // row3//
+               var row3 =document.getElementById("row3").style.paddingBottom="5px";
+
+
+
+                           }}
+            function clic(k){
+                        var u=k;
+                var room = document.getElementById("room");
+                if(room.style.width=='20vw'){
+                    alert(u);
+                }
+                else {}
+
+            }
+
+        </script>
+       
+    </body>
+</html>

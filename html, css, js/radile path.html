@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <style>
+            
+        
+            .cont,.cover{z-index: 0;
+                position:absolute;height: 100px;width: 100px;
+                left:50%;top:50%;transition:2s;
+                transform: translate(-50% , -50%);
+            }
+            .cover{z-index: 10;background-color: aqua;}
+           
+            img{position:absolute; transition:2s;left:50%;top:50%;transition:2s;
+                transform: translate(-50% , -50%);}
+
+
+                .ro{position: relativ;  top:50;
+                 left: 0;}
+           /* .ro:nth-child(1){transform: rotate(10deg);   
+            }
+            .ro:nth-child(2){transform: rotate(-10deg);    
+            }
+            .ro:nth-child(3){transform: rotate(20deg);    
+            }*/
+
+
+
+           
+
+
+           .cont:hover #im1{
+            width:500x; top:-100px;left: -50px;
+
+           } 
+           .cont:hover #im2{
+            width:500x; top:-100px;left:150px
+
+           } .cont:hover #im3{
+            width:500x; top:-150px;
+
+           }
+           .cont:hover .cover{
+            border-radius: 50px 50px 0 0;
+            box-shadow:10px 10px gold;
+           }
+
+
+        </style>
+
+
+    </head>
+    <body>
+       
+        <div class="cont"> <div class="cover"></div>
+         <div class="ro"><img src="image1.jpg" id="im1" alt="" width="70px"></div>
+
+         <div class="ro"> <img src="image1.jpg" id="im2" alt="" width="70px"></div>
+
+         <div class="ro"> <img src="image1.jpg" alt="" id="im3" width="70px"></div>
+            
+           
+           
+        
+        </div>
+    </body>
+</html>

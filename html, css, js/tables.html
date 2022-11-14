@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" type="image/x-icon" href="icon.png">
+        <style>
+body{background-color: rgb(255, 255, 255);}
+table,th,td,caption{ background-color: rgba(0, 60, 255, 0.3);
+    border: 2px solid white;
+    border-radius: 10px;padding: 10px; 
+    margin-left: auto;margin-right: auto;font-size: 1.2em;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
+table{border-spacing:10px ;}
+td,th{width:80px ;z-index: -1;}
+
+
+/* for_horezental_zebra_strips*/
+tr:nth-child(even){background-color: rgb(255, 0, 25);}
+/* for virtical zebra strips*/
+th:nth-child(even),td:nth-child(even){background-color:  rgb(255, 0, 25,0.2);}
+
+
+td:hover,th:hover,th:hover a{background-color: black;
+color: greenyellow;width:80px ;border-color: aqua;}
+
+a{text-decoration: none;color: black;}
+
+.t{border-collapse:collapse ; font-size: 0.5em;border-style:dotted ;}
+
+</style>
+    </head>
+    <body>
+        <p style="text-align: center;"> <-------this is converted  to this ---------> </p>
+        <div style="float:left;">
+        <table >
+            
+            <colgroup >
+                <!--first two rows are not edited-->
+            <col span="2">
+            <!-- only midel colume is edited-->
+            <col span="1" style=" background-color:rgba(0, 0, 0,0.8);">
+            
+          
+            
+            </colgroup>
+            <caption>table 1 in html </caption>
+            <tr>
+            <th>   in table
+            <table class="t"><tr>
+                <th> 1 </th>
+                <th>2</th>
+            </tr></table>
+            
+            
+            </th>
+                <th><a href="forlink.html" >link</a></th>
+                <th colspan="2">colspan</th>
+                
+                <th>head 5</th>
+            </tr>
+            <tr>
+                <td >data 11</td>
+                <td>data 12</td>
+                <td>data 13</td>
+                <td>data 14</td>
+                <td>data 15</td>
+            </tr>
+            <tr>
+                <td>data 21</td>
+                <td>data 22</td>
+                <td>data 23</td>
+                <td>data 24</td>
+                <td>data 35</td>
+            </tr>
+            <tr>
+                <td>data 31</td>
+                <td>data 32</td>
+                <td>data 33</td>
+                <td>data 34</td>
+                <td>data 35</td>
+            </tr>
+            <tr>
+                <td>data 41</td>
+                <td>data 42</td>
+                <td>data 43</td>
+                <td>data 44</td>
+                <td>data 45</td>
+            </tr>
+            <tr>
+                <td>data 51</td>
+                <td>data 52</td>
+                <td>data 53</td>
+                <td>data 54</td>
+                <td>data 55</td>
+            </tr>
+
+        </table></div> 
+        
+
+            <div style=" float:right;">
+                
+        <table>
+            
+            <colgroup >
+
+                <!--first two rows are not edited-->
+            <col span="2">
+            <!-- only midel colume is edited-->
+            <col span="1" style=" background-color:rgba(0, 0, 0,0.8);">
+
+            <!--in this tabule 4th colume is collapsed-->
+            <col span="1" style="visibility:collapse;">
+          
+            
+            </colgroup>
+            <caption>table 2 in html </caption>
+            <tr>
+            <th>   in table
+            <table class="t"><tr>
+                <th> 1 </th>
+                <th>2</th>
+            </tr></table>
+            
+            
+            </th>
+                <th><a href="forlink.html" >link</a></th>
+                <th colspan="2">colspan</th>
+                
+                <th>head 5</th>
+            </tr>
+            <tr>
+                <td >data 11</td>
+                <td>data 12</td>
+                <td>data 13</td>
+                <td>data 14</td>
+                <td>data 15</td>
+            </tr>
+            <tr>
+                <td>data 21</td>
+                <td>data 22</td>
+                <td>data 23</td>
+                <td>data 24</td>
+                <td>data 35</td>
+            </tr>
+            <tr>
+                <td>data 31</td>
+                <td>data 32</td>
+                <td>data 33</td>
+                <td>data 34</td>
+                <td>data 35</td>
+            </tr>
+            <tr>
+                <td>data 41</td>
+                <td>data 42</td>
+                <td>data 43</td>
+                <td>data 44</td>
+                <td>data 45</td>
+            </tr>
+            <tr>
+                <td>data 51</td>
+                <td>data 52</td>
+                <td>data 53</td>
+                <td>data 54</td>
+                <td>data 55</td>
+            </tr>
+
+        </table></div>
+    </body>
+</html>

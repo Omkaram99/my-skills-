@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<link rel="icon" type="image/x-icon" href="icon.png" >
+<title>iframe</title>
+
+<style>
+
+    div{width:50%; margin-right: auto;margin-left: auto;}
+    /*button{width: 50%;margin-left: auto;margin-right: auto;}*/
+    #vpdf{display: none; border:5px groove red; }
+</style>
+
+    </head>
+
+    <body>
+
+        <div>
+            <p style="display: inline-flex;">click here 👉 </p>
+        <button id="bu" onclick="hide()">Show the site</button>
+       </div>
+       
+        <div id="vpdf">
+        <iframe  src="tables.html" height="500px" width="100%" ></iframe>
+    </div>
+
+
+<script>
+     i=0.0;
+    function hide(){
+ i++;
+ if(i%2 != 0){
+
+var x = document.getElementById("vpdf");x.style.display="block";
+x.style.position="fixed";
+x.style.left="25%"
+
+document.getElementById("bu").innerHTML="hide the site";}
+
+else{document.getElementById("vpdf").style.display="none";
+
+document.getElementById("bu").innerHTML="Show the site";}
+
+    }
+</script>
+
+</body>
+
+</html>

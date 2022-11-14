@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <style>
+*{
+    margin:0px;padding: 0px;
+}
+
+.cont{width:100%;height:100vh;
+    position:fixed;
+background-image:linear-gradient(rgb(0, 55, 255), black );
+}
+
+.hj{  position:absolute; color: rgb(255, 255, 255); font-size:5vw;}
+
+
+.la{ position:inherit;
+   background-color: rgb(254, 254, 254);
+   border-radius:50%;z-index: 8px;
+}
+
+.la:nth-child(1){
+ padding:10px;left:20%;
+ top:30%;
+ background-color: rgb(235, 37, 211);
+}
+.la:nth-child(2){
+ padding:20px;left:30%;
+ top:50%;
+ background-color: rgb(165, 134, 42);
+}
+.la:nth-child(3){
+ padding:10px;left:40%;
+ top:10%;
+ background-color: rgb(91, 219, 80);
+}
+.la:nth-child(4){
+ padding:25px;left:80%;
+ top:80%;
+background-color: brown;
+}
+.la:nth-child(5){
+ padding:20px;left:70%;
+ top:35%;
+
+}
+
+
+        </style>
+    </head>
+    <body>
+        <div class="cont">
+            <div class="la"></div>
+            <div class="la"></div>
+            <div class="la"></div>
+            <div class="la"></div>
+            <div class="la"></div>
+        </div>
+        <script>
+           var cont=document.querySelector(".cont");
+           var lae=document.querySelectorAll(".la");
+           cont.onmousemove=function(e){
+            let x= e.pageX/100;
+            let y= e.pageY/100;
+            lae[0].style.transform = 'translate('+ x*-1 +'px, '+ y*1 +'px)';
+            lae[1].style.transform = 'translate('+ x*1.5 +'px, '+ y*1.5 +'px)';
+            lae[2].style.transform = 'translate('+ x*-2 +'px, '+ y*2 +'px)';
+            lae[3].style.transform = 'translate('+ x*2.5 +'px, '+ y*-2.5 +'px)';
+            lae[4].style.transform = 'translate('+ x*-3 +'px, '+ y*3 +'px)';
+           }
+        </script>
+        <div class="hj">hello</div>
+    </body>
+</html>

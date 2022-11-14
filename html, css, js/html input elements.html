@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="icon" href="icon.png">
+        <title>html input elements</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    </head>
+    <body>
+        <form method="POST" action="" >
+            <label for="username">username</label>
+            <input type="text" name="username" required><br> <br>
+            <label for="password">enter your password</label>
+            <input type="password" name="passeord" required>
+            <br> <br>
+            <label for="color">seleact a color :</label>
+            <input type="color" name="color">
+            <br> <br>
+            <label for="date">entera a date</label> 
+            <input type="date" name="date"><br> <br>
+            <label for="datetime-local">datetime-local</label>
+            <input name="datetime-local" type="datetime-local">
+            <br> <br>
+            <label for="r=email">enter your email</label>
+            <input name="email" type="email" required>
+            <br> <br>
+            <label for="file">upload a file</label>
+            <input type="file" name="file" required >
+            <br> <br>
+            
+            <label for="month">month</label>
+            <input type="month" name="month">
+            <br> <br>
+            <label for="time">time</label>
+            <input type="time" name="time">
+            <br> <br>
+            <label for="range">seleat number from 80 to 160</label>
+            <input type="range" name="range" min="80" max="160" required>
+            <br> <br>
+            <label for="number">enter a number in between 0 to 80 :</label>
+            <input type="number" name="number" min="0" max="80">
+            <br> <br>
+            <label for="time">time</label>
+            <input type="time" name="time">
+            <br> <br>
+            <label for="tellphon" >enter your mobile number</label>
+            <input type="tel" name="tellphon number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" title="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+            placeholder="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+            >
+            <br> <br>
+            <label for="url">enter your url :</label>
+            <input type="url" name="url" required>
+            <br> <br>
+            <label for="week">week</label>
+            <input type="week" name="week">
+            <br>
+            <br>
+            <input type="submit" value="send"> <input type="reset" value="clear form">
+        </form>
+    </body>
+</html>

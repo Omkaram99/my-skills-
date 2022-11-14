@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <style>
+            *{
+                box-sizing: border-box;padding: 0px;margin: 0px;
+            }
+            
+            .awrap{
+                background-color: black;
+                width: 100vw;
+                height:100vh; 
+                position: absolute;
+                z-index:0;
+            }
+            .ambox{
+           
+                width:100px;padding: 10px;
+                height: 100px;
+                margin: auto;
+                position: absolute;
+                left: 50%;top:50%;
+                transform: translate(-50%,-50%);
+                z-index: -5;
+            }
+            .ambox h1 {
+                margin-left: -30px;
+                padding: 10px;
+                color:whitesmoke;}
+
+            
+         
+            .aibox{
+                position:relative;
+                animation: aloading_layer1 5s infinite linear;
+                padding: 18px;
+                display: inline-block;
+            }
+           .aibox1{
+                position:relative;
+                animation: aloading_layer2 5s infinite linear;
+                padding: 18px;
+                display: inline-block;
+            }
+            .aibox:nth-child(1){   border-radius:50px 0px 0px 0px; background-image:linear-gradient(to top,red,green); }
+            .aibox:nth-child(2){   border-radius:0px 50px 0px 0px; background-image:linear-gradient(to top,red,green);}
+            .aibox:nth-child(3){   border-radius:0px 0px 0px 50px; background-image:linear-gradient(to bottom,red,green);}
+            .aibox:nth-child(4){   border-radius:0px 0px 50px 0px; background-image:linear-gradient(to bottom,red,green); }
+            
+
+            .aibox1:nth-child(1){   border-radius:50px 0px 0px 0px; background-image:linear-gradient(to top,red,blue); }
+            .aibox1:nth-child(2){   border-radius:0px 50px 0px 0px; background-image:linear-gradient(to top,red,blue);}
+            .aibox1:nth-child(3){   border-radius:0px 0px 0px 50px; background-image:linear-gradient(to bottom,red,blue);}
+            .aibox1:nth-child(4){   border-radius:0px 0px 50px 0px; background-image:linear-gradient(to bottom,red,blue); }
+            
+            
+            @keyframes aloading_layer1 {
+                0%{
+                    transform:rotate(0deg);
+                }
+                100%{
+                    transform:rotate(360deg);
+
+                }
+            }
+
+            @keyframes aloading_layer2 {
+                0%{
+                    transform:rotate(0deg);
+                }
+                100%{
+                    transform:rotate(-360deg);
+
+                }
+            }
+            #print{color: aliceblue;position: absolute;z-index: 100;}
+        </style>
+   </head>
+   <body>
+   
+
+    </script>
+    
+    
+    
+    <div class="awrap">
+    <div class="ambox">
+       
+        <div class="aibox " id="rot"></div>
+        <div class="aibox "></div>
+        <div class="aibox "></div>
+        <div class="aibox "></div>
+
+    </div>
+
+    <div class="ambox ">
+      
+        <div class="aibox1 "></div>
+        <div class="aibox1 "></div>
+        <div class="aibox1 "></div>
+        <div class="aibox1 "></div>
+        <h1>loading...</h1>
+</div>
+    </div>
+    
+   </body>
+</html>

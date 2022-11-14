@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="width=device-width,initial-scale=1.0" >
+    </head>
+    <style>
+        .filler{
+            height:120vh;
+            background-color: aqua;
+
+        }
+        #kk{transition: 2s;border-radius:0 100px 100px 0;
+            background-color: blue;width:20%;height:5vh;
+        }
+
+    </style>
+    <body onscroll="scrolled();">
+        <div class="filler"></div>
+        <div id="bbbb" ><div id="kk">ok</div></div>
+        <div class="filler"></div>
+        <script>
+                           // console.log(document.documentElement.clientHeight - 100);alert('ok');
+            
+            var po =2;
+ function scrolled(){
+                            var pos =document.getElementById('kk').getBoundingClientRect();
+                            console.log(document.documentElement.clientHeight - 100 , pos.top);//alert('ok');
+                            if(pos.top <= (document.documentElement.clientHeight - 100) && po == 0){
+                                po = 1
+                               document.getElementById('kk').style.width= '100%' ;//' linear-gradient(to right,blue 80%,transparent 100%)';
+                            }
+                            else if ( pos.top >= (document.documentElement.clientHeight - 100)){
+                               document.getElementById('kk').style.width= '20%';//' linear-gradient(to right,blue ,transparent 100%)';
+                                po =0;
+                            }
+
+                        }
+        </script>
+    </body>
+</html>
